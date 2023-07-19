@@ -26,7 +26,7 @@ spec:
       labels:
         app: gke-cloud-sql-app
     spec:
-      serviceAccountName: <YOUR-KSA-NAME>
+      serviceAccountName: ksa4alchemy
       containers:
       - name: gke-cloud-sql-app
         # Replace <LOCATION> with your Artifact Registry location (e.g., us-central1).
