@@ -45,17 +45,17 @@ spec:
         - name: DB_USER
           valueFrom:
             secretKeyRef:
-              name: <YOUR-DB-SECRET>
+              name: alchemy-secret
               key: username
         - name: DB_PASS
           valueFrom:
             secretKeyRef:
-              name: <YOUR-DB-SECRET>
+              name: alchemy-secret
               key: password
         - name: DB_NAME
           valueFrom:
             secretKeyRef:
-              name: <YOUR-DB-SECRET>
+              name: alchemy-secret
               key: database
       - name: cloud-sql-proxy
         # This uses the latest version of the Cloud SQL proxy
