@@ -77,3 +77,5 @@ spec:
           # "nonroot" user and group (uid: 65532) by default.
           runAsNonRoot: true
 # [END cloud_sql_mysql_sqlalchemy_gke_quickstart_deployment]
+      nodeSelector:
+        cloud.google.com/gke-nodepool: sql-pool
